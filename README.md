@@ -49,7 +49,6 @@ cd AutoTag
 ### Install dependencies
 
 - Use `npm install` in both: Frontend and Backend folders
-- Use `pip install` in Python folder //or pip install -r requirements.txt
 
 ### Set up the environment
 
