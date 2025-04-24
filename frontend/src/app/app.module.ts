@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { VideoplayerComponent } from './pages/videoplayer/videoplayer.component';
-//Modules
-import { videoModule } from './pages/auto-tag/auto-tag.module';
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
 
 // Layout Components
 import { HeaderComponent } from './components/layout/header/header.component';
@@ -22,6 +20,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { SecurityComponent } from './pages/security/security.components';
 import { FaqComponent } from './pages/faq/faq.components';
 import { VideosComponent } from './pages/videos/videos.component';
+import { VideoplayerComponent } from './pages/videoplayer/videoplayer.component';
+import { videoModule } from './pages/auto-tag/auto-tag.module';
 
 @NgModule({
   declarations: [
@@ -41,9 +41,10 @@ import { VideosComponent } from './pages/videos/videos.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     videoModule,
-    HttpClientModule 
+    VideoplayerComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

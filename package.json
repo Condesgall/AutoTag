@@ -11,6 +11,7 @@
     "@angular/router": "^19.2.2",
     "@videogular/ngx-videogular": "^10.0.1",
     "rxjs": "^7.8.2",
+    "tslib": "^2.8.1",
     "zone.js": "^0.15.0"
   }
 }
